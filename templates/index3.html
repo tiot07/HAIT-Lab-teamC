@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/design1.css') }}">
+    <title>出席者の選択ページ</title>
+  </head>
+  <body>
+    <h1>出席者の選択</h1>
+    <h3>{{message}}<h3>
+	
+	<form method="POST">
+	  <div class=btn>
+	    <label for="ck1">{{member[0]}}：</label>
+	    <input type="checkbox" id="ck1" name="checkbox" value=0>
+	  </div>
+	  <div class=btn>
+	    <label for="ck2">{{member[1]}}：</label>
+	    <input type="checkbox" id="ck2" name="checkbox" value=1>
+	  </div>
+	  <div class=btn>
+	    <label for="ck3">{{member[2]}}：</label>
+	    <input type="checkbox" id="ck3" name="checkbox" value=2>
+	  </div>
+	  <div class=btn>
+	    <label for="ck4">{{member[3]}}：</label>
+	    <input type="checkbox" id="ck4" name="checkbox" value=3>
+	  </div>
+	  <div class=btn>
+	    <label for="ck5">全員：</label>
+	    <input type="checkbox" id="ck5" name="checkbox" value=4>
+	  </div>
+	  <div class=btn>
+	    <input type="submit" value="決定">
+	  </div>
+	  <a href="/">トップページへ</a>
+  </body>
+</html>

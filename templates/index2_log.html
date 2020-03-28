@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <title>出退ログ</title>
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/design.css') }}">
+  </head>
+  
+  <body>
+    <h1>出退ログ</h1>
+    <h1>{{ title }}</h1>
+    {{ logtable }}
+    <a href="/conf/">出席確認ページへ</a>
+  </body>
+</html>

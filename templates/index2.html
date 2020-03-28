@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <title>出席確認ページ</title>
+  <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/design.css') }}">
+</head>
+
+<style>
+   table {
+       border-collapse: collapse;   /* 隣接するセルの罫線を重ねて表示する */
+       font-family: "メイリオ", sans-serif;/* フォントのスタイルを指定する */
+       color: #000000;      /* フォントの色を指定する */
+       width: 80%;  /* テーブルの横幅を指定する */
+   }
+   td, th {
+       border: 1px solid #000000;   /* 境界線を実線で指定する */
+       background-color: rgba(255, 255, 255, 0.75);/* 背景色を指定する */
+       text-align: center;  /* インライン要素の位置を指定する */
+       padding: 3px;        /* 要素の余白を指定する(上下左右) */
+   }
+   th {
+       background-color: #2cd;   /* 見出しの背景色を指定する */
+   }
+</style>
+
+
+<body>
+  <h1>{{ title }}</h1>
+  <h1>現在出席中のメンバー</h1>
+  {{ table1 }}
+
+  <h2>顔画像の確認</h2>
+  {% for name in list %}
+  <a href="http://127.0.0.1:8000/static/images/{{dict[name]}}">{{ name }}</a> <br>
+  {% endfor %}
+
+  <h2>まだ来ていないメンバー</h2>
+  {{ table2 }}
+  <a href="/log/">出退ログ</a>
+  <a href="/">トップページへ</a>
+</body>
+</html>
