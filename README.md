@@ -1,5 +1,6 @@
 # 紹介動画
 https://www.youtube.com/watch?v=1jzbwTGvBJw&feature=youtu.be
+動作は(5:20~)
 
 # 前準備
 ## OpenCVをインストール
