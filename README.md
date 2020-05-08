@@ -1,3 +1,6 @@
+# 紹介動画
+https://www.youtube.com/watch?v=1jzbwTGvBJw&feature=youtu.be
+
 # 前準備
 ## OpenCVをインストール
 pip3 install opencv-python
