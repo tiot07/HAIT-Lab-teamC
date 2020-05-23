@@ -1,5 +1,6 @@
+# 顔認識を用いた出席管理システム
 # 紹介動画
-https://www.youtube.com/watch?v=1jzbwTGvBJw&feature=youtu.be  
+https://photos.app.goo.gl/9UT3XavukXaTLhPUA
 動作は(5:20~)
 
 # 前準備
