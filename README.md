@@ -1,7 +1,7 @@
 # 顔認識を用いた出席管理システム
 # 紹介動画
-https://photos.app.goo.gl/9UT3XavukXaTLhPUA
-動作は(5:20~)
+https://photos.app.goo.gl/9UT3XavukXaTLhPUA  
+動作は(5:21~)
 
 # 前準備
 ## OpenCVをインストール
